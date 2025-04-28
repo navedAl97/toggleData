@@ -6,10 +6,13 @@ type Post = {
     firstName: string;
     lastName: string;
     email: string;
-    cardNumber: number;
-    country: string;
-    bank:number;
-    address:string;
+    bank:{
+      cardNumber:string;
+    };
+
+    address:{
+      country:string
+    }
 };
 type APIResponse = {
     users: Post[];
